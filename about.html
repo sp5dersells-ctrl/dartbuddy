@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About DartBuddy — River Dart Conditions Tool</title>
+  <meta name="description" content="What DartBuddy is, who it's for, where the data comes from, and why you should always check official sources before boating on the River Dart.">
+  <meta name="theme-color" content="#0d1b2a">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="DartBuddy home">
+        <span class="nav__logo-mark" aria-hidden="true">DB</span>
+        DartBuddy
+      </a>
+      <div class="nav__links" role="list">
+        <a href="index.html"       class="nav__link" role="listitem">Home</a>
+        <a href="conditions.html"  class="nav__link" role="listitem">Conditions</a>
+        <a href="guide.html"       class="nav__link" role="listitem">Guide</a>
+        <a href="about.html"       class="nav__link active" role="listitem">About</a>
+        <a href="conditions.html"  class="nav__link nav__link--cta" role="listitem">Check Conditions</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav" role="list">
+      <a href="index.html"       class="nav__link" role="listitem">Home</a>
+      <a href="conditions.html"  class="nav__link" role="listitem">Conditions</a>
+      <a href="guide.html"       class="nav__link" role="listitem">Guide</a>
+      <a href="about.html"       class="nav__link" role="listitem">About</a>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <header class="about-header">
+    <div class="container" style="max-width:720px;margin:0 auto;padding:0 24px;">
+      <span class="section-label">About</span>
+      <h1 class="section-title" style="font-size:clamp(2.2rem,4vw,3rem);">About DartBuddy</h1>
+      <p class="section-sub" style="margin-top:16px;">A simple, honest tool for anyone heading out on the River Dart. What we are, what we're not, and where the data comes from.</p>
+    </div>
+  </header>
+
+  <!-- ===================== ABOUT BODY ===================== -->
+  <main class="about-body">
+    <div class="about-body__inner">
+
+      <section class="about-section">
+        <h2>What is DartBuddy?</h2>
+        <p>DartBuddy is a free, lightweight web tool that brings together live weather and wind conditions for the River Dart in one easy-to-read format. It's built for people who want a quick, clear picture of what the river is doing before they head out on the water.</p>
+        <p>There's no registration, no login, no app to install. Open the site, select a location, and see the current conditions and a 7-day forecast — along with a direct link to official tide information from the ADMIRALTY EasyTide service.</p>
+        <p>DartBuddy is intended as a convenient starting point for pre-trip planning. It is not a navigation tool, it does not replace official charts or local knowledge, and it should never be the only source of information you consult before boating.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>Who is it for?</h2>
+        <p>DartBuddy is primarily aimed at:</p>
+        <ul>
+          <li>Visitors to Dartmouth and the surrounding area who are hiring a boat for the day</li>
+          <li>Families and groups new to river boating who want a straightforward conditions overview</li>
+          <li>Regular leisure boaters based on the Dart who want a quick daily check</li>
+          <li>Paddlers, rowing crews, and other river users for whom wind and weather matter</li>
+          <li>Sailing and motor cruiser crews arriving at Dartmouth from sea who want a river-specific conditions view</li>
+        </ul>
+        <p>If you're an experienced mariner, DartBuddy isn't a replacement for your usual sources — but it might still be a convenient quick reference when you're standing on the quay and want a fast summary.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>Why does it exist?</h2>
+        <p>The River Dart is one of the most visited waterways in Devon, yet there isn't a single, simple place for leisure boaters to check the conditions that matter most — wind, weather, and temperature — without wading through generic national forecasts or professional marine services designed for blue-water sailors.</p>
+        <p>DartBuddy was built to fill that gap: a clean, focused tool for the Dart specifically, with preset locations that mean something to people who actually use the river.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>Where does the data come from?</h2>
+        <p>All weather and forecast data displayed on DartBuddy comes from <a href="https://open-meteo.com/" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:underline;text-underline-offset:2px;">Open-Meteo</a>, an open-source weather API that aggregates data from national meteorological services including the UK Met Office, DWD, and NOAA. Open-Meteo is free to use for non-commercial purposes and does not require an API key.</p>
+        <p>Marine conditions (wave height, wave period, wave direction) are also sourced from Open-Meteo's marine forecast API where available. For inland or very sheltered river locations such as Totnes and Stoke Gabriel, marine data is often not available — DartBuddy handles this gracefully and displays weather data only in those cases.</p>
+        <p>Tide information is not generated, estimated, or predicted by DartBuddy. We link directly to <a href="https://easytide.admiralty.co.uk/" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:underline;text-underline-offset:2px;">ADMIRALTY EasyTide</a> — the UK Hydrographic Office's official tide prediction service — for accurate River Dart tide times. The Dartmouth gauge station is used as the primary reference point for tide predictions along the navigable Dart.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>Data accuracy &amp; limitations</h2>
+        <p>Weather forecast data is inherently probabilistic and may differ from actual conditions, particularly at fine spatial scales or during rapidly changing weather patterns. Conditions along the River Dart can vary significantly between locations — conditions at Dartmouth harbour entrance, for example, may differ from those at Dittisham or the upper river.</p>
+        <p>The coordinates used for each preset location are representative of the general area and may not precisely reflect conditions at a specific mooring, quay, or anchorage within that area.</p>
+        <p>Marine forecast data (wave height and period) is primarily useful for the lower, more open section of the estuary. Inland locations will show 'Not available' for marine parameters, which is the correct behaviour.</p>
+        <p>Wind speeds are displayed in knots (kn). Temperature is in degrees Celsius (°C).</p>
+      </section>
+
+      <!-- Disclaimer box -->
+      <div class="about-disclaimer">
+        <h4>Important Disclaimer</h4>
+        <p>DartBuddy provides indicative weather and wind information to assist with general trip planning on the River Dart. It is not a certified navigation aid and does not constitute official safety or marine guidance. Always verify conditions with official sources — including the <a href="https://easytide.admiralty.co.uk/" target="_blank" rel="noopener" style="color:var(--sky);">ADMIRALTY EasyTide</a> service, Dartmouth Harbour Authority, and the UK Met Office — before boating. Users are solely responsible for their own safety on the water.</p>
+      </div>
+
+      <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--slate);display:flex;gap:20px;flex-wrap:wrap;">
+        <a href="conditions.html" class="btn btn--primary">Check Conditions →</a>
+        <a href="guide.html" class="btn btn--outline">Boating Guide</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-mark" aria-hidden="true">DB</span>
+            DartBuddy
+          </div>
+          <p class="footer__tagline">Simple River Dart conditions and boating guidance in one clean place. For leisure boaters, boat hirers, and visitors to Dartmouth and the wider estuary.</p>
+        </div>
+        <div>
+          <p class="footer__nav-title">Navigate</p>
+          <nav class="footer__nav-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="conditions.html">Conditions</a>
+            <a href="guide.html">Boating Guide</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__nav-title">Resources</p>
+          <nav class="footer__nav-links" aria-label="External resources">
+            <a href="https://easytide.admiralty.co.uk/Home?PortID=0042C" target="_blank" rel="noopener">ADMIRALTY EasyTide</a>
+            <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>
+            <a href="https://www.dartmouth-harbour.co.uk/" target="_blank" rel="noopener">Dartmouth Harbour</a>
+            <a href="https://www.rnli.org/safety" target="_blank" rel="noopener">RNLI Safety Advice</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 DartBuddy. Conditions are indicative only — always verify with official sources before boating.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="about.html">About &amp; Disclaimer</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

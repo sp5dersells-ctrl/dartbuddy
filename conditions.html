@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditions — DartBuddy | River Dart Live Weather &amp; Wind</title>
+  <meta name="description" content="Live weather, wind speed, temperature, and marine conditions for the River Dart. Dartmouth, Dittisham, Totnes, and more.">
+  <meta name="theme-color" content="#0b1929">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="DartBuddy home">
+        <span class="nav__logo-mark" aria-hidden="true">DB</span>
+        DartBuddy
+      </a>
+      <div class="nav__links">
+        <a href="index.html"      class="nav__link">Home</a>
+        <a href="conditions.html" class="nav__link active">Conditions</a>
+        <a href="guide.html"      class="nav__link">Guide</a>
+        <a href="about.html"      class="nav__link">About</a>
+        <a href="conditions.html" class="nav__link nav__link--cta">Check Conditions</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html"      class="nav__link">Home</a>
+      <a href="conditions.html" class="nav__link">Conditions</a>
+      <a href="guide.html"      class="nav__link">Guide</a>
+      <a href="about.html"      class="nav__link">About</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="conditions-header">
+    <div class="conditions-header__inner">
+      <span class="section-label">Conditions</span>
+      <h1>River Dart Conditions</h1>
+      <p>Choose a Dart location and load the current picture fast: wind, temperature, forecast and marine outlook. Tide checks always open the official source.</p>
+    </div>
+  </header>
+
+  <!-- LOCATION TABS -->
+  <div class="location-selector" role="tablist" aria-label="Select location">
+    <div class="location-selector__inner" id="locationTabs">
+      <!-- Injected by app.js -->
+    </div>
+  </div>
+
+  <!-- CONDITIONS DASHBOARD -->
+  <main class="conditions-body">
+    <div class="conditions-body__inner">
+      <div id="conditionsContent">
+        <div class="state-loading">
+          <div class="spinner"></div>
+          <p>Loading conditions…</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-mark" aria-hidden="true">DB</span>
+            DartBuddy
+          </div>
+          <p class="footer__tagline">Simple River Dart conditions and boating guidance in one clean place. For leisure boaters, boat hirers, and visitors to Dartmouth and the wider estuary.</p>
+        </div>
+        <div>
+          <p class="footer__nav-title">Navigate</p>
+          <nav class="footer__nav-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="conditions.html">Conditions</a>
+            <a href="guide.html">Boating Guide</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__nav-title">Resources</p>
+          <nav class="footer__nav-links" aria-label="External resources">
+            <a href="https://easytide.admiralty.co.uk/Home?PortID=0042C" target="_blank" rel="noopener">ADMIRALTY EasyTide</a>
+            <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>
+            <a href="https://www.dartmouth-harbour.co.uk/" target="_blank" rel="noopener">Dartmouth Harbour</a>
+            <a href="https://www.rnli.org/safety" target="_blank" rel="noopener">RNLI Safety</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 DartBuddy. Conditions are indicative only — always verify with official sources before boating.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="about.html">About &amp; Disclaimer</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DartBuddy — River Dart Conditions &amp; Boating Guide</title>
+  <meta name="description" content="Check live weather, wind, and marine conditions on the River Dart. For boat hirers, leisure boaters, and visitors to Dartmouth and Dittisham.">
+  <meta name="theme-color" content="#0b1929">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="DartBuddy home">
+        <span class="nav__logo-mark" aria-hidden="true">DB</span>
+        DartBuddy
+      </a>
+      <div class="nav__links">
+        <a href="index.html"      class="nav__link">Home</a>
+        <a href="conditions.html" class="nav__link">Conditions</a>
+        <a href="guide.html"      class="nav__link">Guide</a>
+        <a href="about.html"      class="nav__link">About</a>
+        <a href="conditions.html" class="nav__link nav__link--cta">Check Conditions</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html"      class="nav__link">Home</a>
+      <a href="conditions.html" class="nav__link">Conditions</a>
+      <a href="guide.html"      class="nav__link">Guide</a>
+      <a href="about.html"      class="nav__link">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero section">
+    <div class="hero__inner">
+
+      <div class="hero__content">
+        <span class="hero__label">River Dart · Devon</span>
+        <h1 class="hero__title">
+          Check the Dart<br>
+          before you <em>cast off</em>
+        </h1>
+        <p class="hero__sub">
+          Live wind, weather and marine data for the River Dart, laid out in a clean brief you can scan in seconds before heading out.
+        </p>
+        <div class="hero__actions">
+          <a href="conditions.html" class="btn btn--primary btn--lg">Check Conditions →</a>
+          <a href="guide.html"      class="btn btn--outline btn--lg">Boating Guide</a>
+        </div>
+      </div>
+
+      <!-- Illustrated preview panel -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero-panel">
+          <div class="hero-panel__header">
+            <span class="hero-panel__title">Dartmouth · Live Preview</span>
+            <span class="hero-panel__dot"></span>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stats__item">
+              <div class="hero-stats__label">Temperature</div>
+              <div class="hero-stats__value">16<span>°C</span></div>
+              <div class="hero-stats__sub">Feels like 14°</div>
+            </div>
+            <div class="hero-stats__item">
+              <div class="hero-stats__label">Wind Speed</div>
+              <div class="hero-stats__value">12<span>kn</span></div>
+              <div class="hero-stats__sub">Gusts to 18 kn</div>
+            </div>
+            <div class="hero-stats__item">
+              <div class="hero-stats__label">Wind Direction</div>
+              <div class="hero-stats__value">SW</div>
+              <div class="hero-stats__sub">225°</div>
+            </div>
+            <div class="hero-stats__item">
+              <div class="hero-stats__label">Conditions</div>
+              <div class="hero-stats__value" style="font-size:1.08rem; letter-spacing:0.02em;">PARTLY CLOUDY</div>
+              <div class="hero-stats__sub">Current picture</div>
+            </div>
+          </div>
+          <div class="hero-panel__footer">Live data via Open-Meteo · Updated just now</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHAT IS DARTBUDDY -->
+  <section class="section what" aria-label="What DartBuddy does">
+    <div class="container">
+      <span class="section-label">What we do</span>
+      <h2 class="section-title">Simple conditions. Clear decisions.</h2>
+      <p class="section-sub">The River Dart is one of Devon's most beautiful waterways — and one of the most variable. DartBuddy makes it easy to check what matters before you head out.</p>
+
+      <div class="what__grid">
+        <div class="what__item">
+          <h3 class="what__title">Live Wind &amp; Weather</h3>
+          <p class="what__desc">Current wind speed, gusts, direction, and temperature for key locations along the Dart — updated from open meteorological sources.</p>
+        </div>
+        <div class="what__item">
+          <h3 class="what__title">7-Day Forecast</h3>
+          <p class="what__desc">Plan ahead with a simple daily forecast showing conditions, temperature range, and wind for the coming week.</p>
+        </div>
+        <div class="what__item">
+          <h3 class="what__title">Tides &amp; Marine Data</h3>
+          <p class="what__desc">Direct links to official ADMIRALTY EasyTide predictions for the River Dart — always accurate, never estimated by us.</p>
+        </div>
+        <div class="what__item">
+          <h3 class="what__title">Key Dart Locations</h3>
+          <p class="what__desc">Conditions for Dartmouth, Kingswear, Dittisham, Stoke Gabriel, and Totnes — the spots that matter most to river users.</p>
+        </div>
+        <div class="what__item">
+          <span class="what__icon">📱</span>
+          <h3 class="what__title">Works on Any Device</h3>
+          <p class="what__desc">Whether you're at home planning a day out or standing on the quayside, DartBuddy loads fast and works cleanly on any screen.</p>
+        </div>
+        <div class="what__item">
+          <span class="what__icon">📖</span>
+          <h3 class="what__title">Boating Guidance</h3>
+          <p class="what__desc">Our plain-language guide covers what to check, why it matters, and where to find official information for safer River Dart boating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section class="section" aria-label="River Dart locations">
+    <div class="container">
+      <span class="section-label">Preset Locations</span>
+      <h2 class="section-title">Conditions along the Dart</h2>
+      <p class="section-sub">Select any location to load live conditions and a 7-day forecast.</p>
+
+      <div class="locations__grid">
+        <a href="conditions.html?loc=dartmouth" class="location-card">
+          <div class="location-card__icon">⚓</div>
+          <div class="location-card__name">Dartmouth</div>
+          <div class="location-card__desc">Town quay, castle &amp; inner harbour</div>
+        </a>
+        <a href="conditions.html?loc=kingswear" class="location-card">
+          <div class="location-card__icon">⛵</div>
+          <div class="location-card__name">Kingswear</div>
+          <div class="location-card__desc">East bank, ferry crossing &amp; marina</div>
+        </a>
+        <a href="conditions.html?loc=dittisham" class="location-card">
+          <div class="location-card__icon">🚣</div>
+          <div class="location-card__name">Dittisham</div>
+          <div class="location-card__desc">Popular anchorage &amp; village moorings</div>
+        </a>
+        <a href="conditions.html?loc=stoke-gabriel" class="location-card">
+          <div class="location-card__icon">🌿</div>
+          <div class="location-card__name">Stoke Gabriel</div>
+          <div class="location-card__desc">Upper estuary &amp; tidal creek</div>
+        </a>
+        <a href="conditions.html?loc=totnes" class="location-card">
+          <div class="location-card__icon">🏛️</div>
+          <div class="location-card__name">Totnes</div>
+          <div class="location-card__desc">Head of navigation, tidal limit</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHECK -->
+  <section class="section why" aria-label="Why check conditions">
+    <div class="container">
+      <div class="why__grid">
+
+        <div>
+          <span class="section-label">Before you go</span>
+          <h2 class="section-title">Why conditions matter on the Dart</h2>
+          <p class="section-sub" style="margin-bottom:0;">The river looks calm — right up until it isn't. A few minutes checking conditions is the difference between a good day on the water and a difficult one.</p>
+
+          <div class="why__list">
+            <div class="why__item">
+              <div class="why__num">1</div>
+              <div class="why__text">
+                <h4>Wind changes everything</h4>
+                <p>Even moderate winds make life uncomfortable for small boats and novice crews, particularly on the open lower estuary near Dartmouth Castle and the harbour entrance.</p>
+              </div>
+            </div>
+            <div class="why__item">
+              <div class="why__num">2</div>
+              <div class="why__text">
+                <h4>Tides run fast in the lower Dart</h4>
+                <p>Spring tidal streams can reach 2–3 knots. Knowing the state of the tide helps you plan your passage and avoid fighting the current.</p>
+              </div>
+            </div>
+            <div class="why__item">
+              <div class="why__num">3</div>
+              <div class="why__text">
+                <h4>Visibility matters on busy stretches</h4>
+                <p>The Dartmouth to Dittisham section carries passenger ferries, sailing craft, and hire boats alongside commercial traffic.</p>
+              </div>
+            </div>
+            <div class="why__item">
+              <div class="why__num">4</div>
+              <div class="why__text">
+                <h4>Forecasts change — check on the day</h4>
+                <p>A settled morning can give way to a brisk afternoon. It's worth checking again on the day of your trip, not just the evening before.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why__cta">
+          <div class="why__cta-label">Ready to check?</div>
+          <h3>Live conditions for the River Dart, right now</h3>
+          <p>View current wind, temperature, and weather for Dartmouth, Dittisham, and the upper river — updated from meteorological data sources.</p>
+          <a href="conditions.html" class="btn btn--primary">Open Conditions Tool →</a>
+          <p class="why__cta-note">Always verify official tide times with ADMIRALTY EasyTide or the nearest harbour authority. DartBuddy provides indicative conditions only.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-mark" aria-hidden="true">DB</span>
+            DartBuddy
+          </div>
+          <p class="footer__tagline">Simple River Dart conditions and boating guidance in one clean place. For leisure boaters, boat hirers, and visitors to Dartmouth and the wider estuary.</p>
+        </div>
+        <div>
+          <p class="footer__nav-title">Navigate</p>
+          <nav class="footer__nav-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="conditions.html">Conditions</a>
+            <a href="guide.html">Boating Guide</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__nav-title">Resources</p>
+          <nav class="footer__nav-links" aria-label="External resources">
+            <a href="https://easytide.admiralty.co.uk/Home?PortID=0042C" target="_blank" rel="noopener">ADMIRALTY EasyTide</a>
+            <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>
+            <a href="https://www.dartmouth-harbour.co.uk/" target="_blank" rel="noopener">Dartmouth Harbour</a>
+            <a href="https://www.rnli.org/safety" target="_blank" rel="noopener">RNLI Safety</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 DartBuddy. Conditions are indicative only — always verify with official sources before boating.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="about.html">About &amp; Disclaimer</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
