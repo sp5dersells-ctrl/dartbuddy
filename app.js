@@ -272,7 +272,7 @@ async function loadConditions(loc, container, options = {}) {
     `latitude=${loc.lat}&longitude=${loc.lon}` +
     `&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation` +
     `&daily=weather_code,temperature_2m_max,temperature_2m_min,wind_speed_10m_max,wind_gusts_10m_max,precipitation_sum` +
-    `&wind_speed_unit=knots&forecast_days=7&timezone=Europe%2FLondon`;
+    `&wind_speed_unit=kn&forecast_days=7&timezone=Europe%2FLondon`;
 
   const marineUrl = `https://marine-api.open-meteo.com/v1/marine?` +
     `latitude=${loc.lat}&longitude=${loc.lon}` +
